@@ -53,5 +53,6 @@ connectedSocket * serverSocket::Accept()
 
 void serverSocket::Close()
 {
+	shutdown(listenfd, SHUT_RDWR);
 	close(listenfd);
 }
