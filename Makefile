@@ -1,7 +1,7 @@
 OBJS = clientSocket.o connectedSocket.o serverSocket.o
 SRCS = clientSocket.cpp connectedSocket.cpp serverSocket.cpp
 INCL = clientSocket.h connectedSocket.h serverSocket.h libsocket.h
-FLAGS = -fpermissive
+FLAGS = -fpermissive -fPIC
 
 all: $(OUT)
 
