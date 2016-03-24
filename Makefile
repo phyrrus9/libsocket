@@ -5,6 +5,9 @@ FLAGS = -fpermissive -fPIC
 
 all: $(OUT)
 
+libsocket.a: $(OBJS)
+	ar rcs libsocket.a $(OBJS)
+
 libsocket.so: $(OBJS)
 	g++ -shared $(OBJS) -o libsocket.so
 
